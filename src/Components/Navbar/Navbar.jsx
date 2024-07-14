@@ -7,6 +7,7 @@ import { KidsNav } from "./Kids";
 import { HomeLivingNav } from "./Home&Living";
 import { MenNav } from "./Men";
 import { StudioNav } from "./Studio";
+import { Stylequest } from "./Stylequest";
 import { getData } from "../../Pages/storage";
 
 const Div = styled.nav`
@@ -196,6 +197,31 @@ const Navbar = () => {
           <StudioNav></StudioNav>
         </div>
 
+
+        <div className="link1">
+          <Link
+            className="link stylequest"
+            style={{
+              // border: '1px solid red',
+              //   marginLeft: "3%",
+              fontWeight: "bold",
+              fontSize: "14px",
+              textDecoration: "none",
+              color: "#282C3F",
+              paddingBottom: "10px",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+              marginBottom: "-2%",
+              whiteSpace: "nowrap",
+              // wordWrap: 'normal',
+            }}
+            to="/stylequest"
+          >
+            STYLE QUEST
+          </Link>
+          <Stylequest></Stylequest> {/* Add Stylequest component */}
+        </div>
+
         {/* <p className="nw">NEW</p> */}
 
         <div className="inp1">
@@ -237,16 +263,16 @@ const Navbar = () => {
           <p style={{ marginLeft: "2%", cursor: "pointer" }}>
             <span>
               <Link to={"/wishlist"} className="rightLink">
-              <img
-              style={{
-                marginLeft: "15%",
-                fontSize: "12px",
-                width: "20px",
-                display: "inline",
-              }}
-              src="https://cdn-icons-png.flaticon.com/512/7299/7299761.png"
-              alt=""
-            />
+                <img
+                  style={{
+                    marginLeft: "15%",
+                    fontSize: "12px",
+                    width: "20px",
+                    display: "inline",
+                  }}
+                  src="https://cdn-icons-png.flaticon.com/512/7299/7299761.png"
+                  alt=""
+                />
                 Wishlist
               </Link>
             </span>
@@ -262,16 +288,16 @@ const Navbar = () => {
           >
             <span>
               <Link to={"/bag"} className="rightLink">
-              <img
-              style={{
-                marginLeft: "15%",
-                fontSize: "12px",
-                width: "20px",
-                marginBottom: "5px",
-              }}
-              src="https://cdn-icons-png.flaticon.com/512/1174/1174408.png"
-              alt=""
-            />
+                <img
+                  style={{
+                    marginLeft: "15%",
+                    fontSize: "12px",
+                    width: "20px",
+                    marginBottom: "5px",
+                  }}
+                  src="https://cdn-icons-png.flaticon.com/512/1174/1174408.png"
+                  alt=""
+                />
                 Bag
               </Link>
             </span>
