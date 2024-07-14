@@ -1,8 +1,9 @@
+
 export const Stylequest = () => {
    return (
       <div className="ddown">
       
-      <a href="/men">
+      <a href="/quest">
          <div className="flex">
             <div className="a1 m">
                <ul>
