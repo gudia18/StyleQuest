@@ -31,6 +31,7 @@ import CommunityHubPage from "../Pages/CommunityHubPage";
 import ContestsPage from "../Pages/ContestsPage";
 import SpendRushPage from "../Pages/SpendRushPage";
 import RewardsPage from "../Pages/RewardsPage";
+import Quiz  from  "../Pages/Quiz";
 
 // import { useNavigate } from "react-router-dom";
 
@@ -80,6 +81,7 @@ const AllRoutes = () => {
         <Route path="/contests" element={<ContestsPage />} > </Route>
         <Route path="/spend-rush" element ={<SpendRushPage />} > </Route>
         <Route path="/rewards" element={<RewardsPage />} > </Route>
+        <Route path = "/quiz" element = {<Quiz />}></Route>
       </Routes>
     </div>
   );

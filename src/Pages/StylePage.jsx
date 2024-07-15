@@ -134,7 +134,7 @@ const StylePage = () => {
                                 }}
                             >
                                 <Text fontSize="1.8rem" fontWeight="bold" mb="1rem" textAlign="center">
-                                    Contests and Rewards
+                                    Contests and LeaderBoard
                                 </Text>
                             </Box>
                         </Link>
