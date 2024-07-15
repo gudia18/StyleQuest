@@ -25,10 +25,17 @@ import AddProductsPage from "../Admin/AddProductsPage";
 import UsersPage from "../Admin/UsersPage";
 import AdminProfilePage from "../Admin/AdminProfilePage";
 import StylePage from "../Pages/StylePage";
+import VirtualTryOnPage from "../Pages/VirtualTryOnPage";
+import LingerieMatchPage from "../Pages/LingerieMatchPage";
+import CommunityHubPage from "../Pages/CommunityHubPage";
+import ContestsPage from "../Pages/ContestsPage";
+import SpendRushPage from "../Pages/SpendRushPage";
+import RewardsPage from "../Pages/RewardsPage";
+
 // import { useNavigate } from "react-router-dom";
 
 const AllRoutes = () => {
-  
+
   const [fulldetails, setFullDetails] = useState("");
   const [buttonLogging, setButtonLogging] = useState(false);
   // const navigate = useNavigate();
@@ -66,7 +73,13 @@ const AllRoutes = () => {
         <Route path="/admin-kids" element={<KidsPage />}></Route>
         <Route path="/admin-users" element={<UsersPage />}></Route>
         <Route path="/admin-profile" element={<AdminProfilePage />}></Route>
-        <Route path = "/quest" element = {<StylePage />}></Route>
+        <Route path="/quest" element={<StylePage />}></Route>
+        <Route path="/virtual-try-on" element={<VirtualTryOnPage />}> </Route>
+        <Route path="/lingerie-match" component={<LingerieMatchPage />} > </Route>
+        <Route path="/community-hub" component={<CommunityHubPage />} > </Route>
+        <Route path="/contests" component={<ContestsPage />} > </Route>
+        <Route path="/spend-rush" component={<SpendRushPage />} > </Route>
+        <Route path="/rewards" component={<RewardsPage />} > </Route>
       </Routes>
     </div>
   );

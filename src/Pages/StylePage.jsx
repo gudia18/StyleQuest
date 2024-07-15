@@ -1,185 +1,195 @@
 import React from "react";
-import { Box, Flex,  Text, } from "@chakra-ui/react";
-
-// import axios from "axios";
-// import { useDispatch } from "react-redux";
-// import { fetchCartData } from "../Redux/Cart/Cart.action";
+import { Box, Flex, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 
 const StylePage = () => {
-//   const dispatch = useDispatch();
-
-//   const handleAddToWishlist = async () => {
-//     try {
-//       // Replace with actual API endpoint for wishlist
-//       await axios.post(`https://vastra.onrender.com/WishList/`, {});
-//       alert("Added to Wishlist Successfully....");
-//     } catch (error) {
-//       alert("Already Exists in Your Wishlist");
-//     }
-//   };
-
-//   const handleAddToBag = async () => {
-//     try {
-//       // Replace with actual API endpoint for adding to cart
-//       await axios.post(`https://vastra.onrender.com/cart/`, {});
-//       alert("Added to Bag Successfully....");
-//       dispatch(fetchCartData());
-//     } catch (error) {
-//       alert("Already Exists in Your Bag");
-//     }
-//   };
-
   return (
     <Box width="100%" border="0px solid red" margin="auto">
       <Navbar />
-      <Box
-        mb="4rem"
-        width="100%"
-        margin="auto"
-        mt={100}
-        border="0px solid black"
-        padding="0 1rem"
-      >
+      <Box mb="4rem" width="100%" margin="auto" mt={100} border="0px solid black" padding="0 1rem">
         <Flex
-          flexDirection={{
-            base: "column",
-            sm: "column",
-            md: "row",
-            lg: "row",
-          }}
-          alignItems="flex-start"
+          flexDirection="column"
+          alignItems="center"
           m="auto"
-          width={{ base: "100%", sm: "100%", md: "70%", lg: "70%" }}
+          width={{ base: "100%", sm: "100%", md: "100%", lg: "100%" }}
           border="0px solid black"
+          borderRadius="10px"
+          overflow="hidden"
+          boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px rgba(0, 0, 0, 0.1)"
         >
-          <Box
-            w={{ base: "100%", sm: "100%", md: "45%", lg: "45%" }}
-            boxShadow="rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
-            m="auto"
-            mt={0}
-            border="0px solid red"
-          >
-            {/* AR/VR or Virtual Try-On Section */}
-            
-            <Box
-              borderRadius={20}
-              m="auto"
-              w="100%"
-              p="0.5rem"
-              backgroundColor="gray.200"
-              height="300px" 
-            >
-              Virtual Try-On Component
-            </Box>
-          </Box>
-
+          {/* Upper Row */}
           <Flex
-            flexDirection="column"
-            justifyContent="space-between"
-            w={{ base: "100%", sm: "100%", md: "55%", lg: "55%" }}
-            m="auto"
-            mt={0}
-            p="0 1rem"
-            boxShadow="rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
-            border="0px solid green"
+            flexDirection={{ base: "column", sm: "column", md: "row", lg: "row" }}
+            justifyContent="center"
+            alignItems="center"
+            width="100%"
+            mb="2rem"
           >
+            {/* Virtual Try-On Section */}
+            <Link to="/virtual-try-on" style={{ textDecoration: 'none', color: 'inherit', width: '100%' }}>
+              <Box
+                flex="1"
+                p="1.5rem"
+                backgroundColor="#F9D1B7"
+                borderRadius="10px"
+                margin="1rem"
+                minHeight="300px"
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                boxShadow="0px 8px 16px rgba(135, 206, 235, 1)"
+                transition="box-shadow 0.3s, transform 0.3s"
+                _hover={{
+                  boxShadow: "0px 12px 24px rgba(108, 166, 205, 1)",
+                  transform: "scale(1.05)",
+                }}
+              >
+                <Text fontSize="1.2rem" fontWeight="bold" mb="1rem" textAlign="center">
+                  Virtual Try-On
+                </Text>
+              </Box>
+            </Link>
+
             {/* Lingerie Match Section */}
-            <Box>
-              <Text
-                pt="1rem"
-                textAlign="left"
-                fontSize="1.2rem"
-                fontWeight={500}
-                color="gray.500"
-                noOfLines={{ base: 1, sm: 1 }}
-              >
-                Lingerie Recommendations
-              </Text>
-              
+            <Link to="/lingerie-match" style={{ textDecoration: 'none', color: 'inherit', width: '100%' }}>
               <Box
-                p="1rem"
-                backgroundColor="gray.100"
-                mt="1rem"
-                borderRadius="md"
-                height="200px" 
+                flex="1"
+                p="1.5rem"
+                backgroundColor="#F9D1B7"
+                borderRadius="10px"
+                margin="1rem"
+                minHeight="300px"
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                boxShadow="0px 8px 16px rgba(135, 206, 235, 1)"
+                transition="box-shadow 0.3s, transform 0.3s"
+                _hover={{
+                  boxShadow: "0px 12px 24px rgba(108, 166, 205, 1)",
+                  transform: "scale(1.05)",
+                }}
               >
-                Lingerie Match Component
+                <Text fontSize="1.2rem" fontWeight="bold" mb="1rem" textAlign="center">
+                  Lingerie Match
+                </Text>
               </Box>
-            </Box>
+            </Link>
 
-            {/* Community Section */}
-            <Box mt="2rem">
-              <Text
-                pt="1rem"
-                textAlign="left"
-                fontSize="1.2rem"
-                fontWeight={500}
-                color="gray.500"
-                noOfLines={{ base: 1, sm: 1 }}
-              >
-                Community Hub
-              </Text>
-              
+            {/* Community Hub Section */}
+            <Link to="/community-hub" style={{ textDecoration: 'none', color: 'inherit', width: '100%' }}>
               <Box
-                p="1rem"
-                backgroundColor="gray.100"
-                mt="1rem"
-                borderRadius="md"
-                height="300px" 
+                flex="1"
+                p="1.5rem"
+                backgroundColor="#F9D1B7"
+                borderRadius="10px"
+                margin="1rem"
+                minHeight="300px"
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                boxShadow="0px 8px 16px rgba(135, 206, 235, 1)"
+                transition="box-shadow 0.3s, transform 0.3s"
+                _hover={{
+                  boxShadow: "0px 12px 24px rgba(108, 166, 205, 1)",
+                  transform: "scale(1.05)",
+                }}
               >
-                Community Component
+                <Text fontSize="1.2rem" fontWeight="bold" mb="1rem" textAlign="center">
+                  Community Hub
+                </Text>
               </Box>
-            </Box>
+            </Link>
+          </Flex>
 
+          {/* Lower Row */}
+          <Flex
+            flexDirection={{ base: "column", sm: "column", md: "row", lg: "row" }}
+            justifyContent="center"
+            alignItems="center"
+            width="100%"
+          >
             {/* Contests and Rewards Section */}
-            <Box mt="2rem">
-              <Text
-                pt="1rem"
-                textAlign="left"
-                fontSize="1.2rem"
-                fontWeight={500}
-                color="gray.500"
-                noOfLines={{ base: 1, sm: 1 }}
-              >
-                Contests and Rewards
-              </Text>
-             
+            <Link to="/contests-rewards" style={{ textDecoration: 'none', color: 'inherit', width: '100%' }}>
               <Box
-                p="1rem"
-                backgroundColor="gray.100"
-                mt="1rem"
-                borderRadius="md"
-                height="200px" 
+                flex="1"
+                p="1.5rem"
+                backgroundColor="#F9D1B7"
+                borderRadius="10px"
+                margin="1rem"
+                minHeight="300px"
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                boxShadow="0px 8px 16px rgba(135, 206, 235, 1)"
+                transition="box-shadow 0.3s, transform 0.3s"
+                _hover={{
+                  boxShadow: "0px 12px 24px rgba(108, 166, 205, 1)",
+                  transform: "scale(1.05)",
+                }}
               >
-                Contests and Rewards Component
+                <Text fontSize="1.2rem" fontWeight="bold" mb="1rem" textAlign="center">
+                  Contests and Rewards
+                </Text>
               </Box>
-            </Box>
+            </Link>
 
             {/* Spend Rush Section */}
-            <Box mt="2rem">
-              <Text
-                pt="1rem"
-                textAlign="left"
-                fontSize="1.2rem"
-                fontWeight={500}
-                color="gray.500"
-                noOfLines={{ base: 1, sm: 1 }}
-              >
-                Spend Rush
-              </Text>
-              
+            <Link to="/spend-rush" style={{ textDecoration: 'none', color: 'inherit', width: '100%' }}>
               <Box
-                p="1rem"
-                backgroundColor="gray.100"
-                mt="1rem"
-                borderRadius="md"
-                height="200px" 
+                flex="1"
+                p="1.5rem"
+                backgroundColor="#F9D1B7"
+                borderRadius="10px"
+                margin="1rem"
+                minHeight="300px"
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                boxShadow="0px 8px 16px rgba(135, 206, 235, 1)"
+                transition="box-shadow 0.3s, transform 0.3s"
+                _hover={{
+                  boxShadow: "0px 12px 24px rgba(108, 166, 205, 1)",
+                  transform: "scale(1.05)",
+                }}
               >
-                Spend Rush Component
+                <Text fontSize="1.2rem" fontWeight="bold" mb="1rem" textAlign="center">
+                  Spend Rush
+                </Text>
               </Box>
-            </Box>
+            </Link>
+
+            {/* Rewards Section */}
+            <Link to="/rewards" style={{ textDecoration: 'none', color: 'inherit', width: '100%' }}>
+              <Box
+                flex="1"
+                p="1.5rem"
+                backgroundColor="#F9D1B7"
+                borderRadius="10px"
+                margin="1rem"
+                minHeight="300px"
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                boxShadow="0px 8px 16px rgba(135, 206, 235, 1)"
+                transition="box-shadow 0.3s, transform 0.3s"
+                _hover={{
+                  boxShadow: "0px 12px 24px rgba(108, 166, 205, 1)",
+                  transform: "scale(1.05)",
+                }}
+              >
+                <Text fontSize="1.2rem" fontWeight="bold" mb="1rem" textAlign="center">
+                  Rewards 🏆
+                </Text>
+              </Box>
+            </Link>
           </Flex>
         </Flex>
       </Box>

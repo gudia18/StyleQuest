@@ -215,7 +215,7 @@ const Navbar = () => {
               whiteSpace: "nowrap",
               // wordWrap: 'normal',
             }}
-            to="/stylequest"
+            to="/quest"
           >
             STYLE QUEST
           </Link>
