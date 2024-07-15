@@ -7,6 +7,13 @@ Style-Quest is a modern web application transforming the fashion experience thro
 
 we have used React, Chakra, JS, Html, Css to made this project.
 
+For local environment: 
+1. `clone the repo`
+2. `npm i`
+3. `npm start `
+    It will run on local host 3000      port 
+
+
 # Team Name:-
 HackMeIfUCan
 # Team members:-
