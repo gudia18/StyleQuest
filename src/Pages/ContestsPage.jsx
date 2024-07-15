@@ -5,7 +5,7 @@ import { FiBookmark, FiCheckCircle, FiClock, FiStar } from "react-icons/fi";
 const ContestsPage = () => {
     return (
         <Center h="100vh">
-            <Box p="0" bg="gray.50" width="100%" maxWidth="800px">
+            <Box p="0" bg="pink.40" width="100%" maxWidth="800px">
                 {/* Detail Quiz Section */}
                 <Box p="2rem" bg="pink.100" borderRadius="md" textAlign="center" mb="10px">
                     <Text fontSize="sm" fontWeight="bold" color="gray.700" mb="0.5rem">Detail Quiz</Text>
