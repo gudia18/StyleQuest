@@ -81,7 +81,7 @@ const Footer = () => {
         <p className="bottom">
           In case of any concern, <span className="footerspan">Contact Us</span>
         </p>
-        <p className="bottom">© 2023 www.myntra.com. All rights reserved.</p>
+        <p className="bottom">© 2024 www.myntra.com. All rights reserved.</p>
       </div>
     </div>
   );
