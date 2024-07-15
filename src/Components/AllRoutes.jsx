@@ -75,11 +75,11 @@ const AllRoutes = () => {
         <Route path="/admin-profile" element={<AdminProfilePage />}></Route>
         <Route path="/quest" element={<StylePage />}></Route>
         <Route path="/virtual-try-on" element={<VirtualTryOnPage />}> </Route>
-        <Route path="/lingerie-match" component={<LingerieMatchPage />} > </Route>
-        <Route path="/community-hub" component={<CommunityHubPage />} > </Route>
-        <Route path="/contests" component={<ContestsPage />} > </Route>
-        <Route path="/spend-rush" component={<SpendRushPage />} > </Route>
-        <Route path="/rewards" component={<RewardsPage />} > </Route>
+        <Route path="/lingerie-match" element={<LingerieMatchPage />} > </Route>
+        <Route path="/community-hub" element={<CommunityHubPage />} > </Route>
+        <Route path="/contests" element={<ContestsPage />} > </Route>
+        <Route path="/spend-rush" element ={<SpendRushPage />} > </Route>
+        <Route path="/rewards" element={<RewardsPage />} > </Route>
       </Routes>
     </div>
   );

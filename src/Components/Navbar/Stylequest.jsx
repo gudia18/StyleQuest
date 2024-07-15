@@ -13,6 +13,8 @@ export const Stylequest = () => {
                   <li>Body Shapes and Skin Tones</li>
                   <li>Personalization</li>
                   <li>Social Sharing</li>
+                  <li>Mix Match</li>
+                  <li>color suit</li>
                </ul>
                <ul className="nextul m">
                   <li><a href="/lingerie-match">Lingerie Match</a></li>
