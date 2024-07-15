@@ -45,9 +45,9 @@ const Navbar = () => {
               marginLeft: "15%",
               // marginRight: "30%",
             }}
-            src="/Logo.jpg"
+            src="/Logo.png"
             // src={V_Logo}
-            alt=""
+            alt="logo"
           />
         </Link>
 

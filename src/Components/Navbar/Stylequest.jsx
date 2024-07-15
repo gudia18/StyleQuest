@@ -7,7 +7,7 @@ export const Stylequest = () => {
          <div className="flex">
             <div className="a1 m">
                <ul>
-                  <li>Virtual Try On</li>
+                 <li><a href="/virtual-try-on">Virtual Try On</a></li>
                   <li>AR/VR </li>
                   <li>3D  Visualization</li>
                   <li>Body Shapes and Skin Tones</li>
@@ -15,14 +15,14 @@ export const Stylequest = () => {
                   <li>Social Sharing</li>
                </ul>
                <ul className="nextul m">
-                  <li>Lingerie Match</li>
+                  <li><a href="/lingerie-match">Lingerie Match</a></li>
                   <li>Fit and Style</li>
                   <li>Color Matching</li>
                </ul>
             </div>
             <div className="a2 m">
                <ul>
-                  <li>Community Forum</li>
+                 <li><a href="/community-forum">Community Forum</a></li>
                   <li>Topics</li>
                   <li>Virtual Events</li>
                   <li>Local Meetups</li>
@@ -31,7 +31,7 @@ export const Stylequest = () => {
                </ul>
 
                <ul className="nextul m">
-                  <li>Contests</li>
+                  <li><a href="/contests">Contests</a></li>
                   <li>Challenges</li>
                   <li>Themes</li>
                   <li>Prizes</li>
@@ -39,12 +39,12 @@ export const Stylequest = () => {
                   <li>Voting System</li>
                </ul>
                <ul className="nextul m">
-                  <li>Rewards</li>
+                   <li><a href="/rewards">Rewards</a></li>
                </ul>
             </div>
             <div className="a1 m">
                <ul>
-                  <li>SpendRush</li>
+                 <li><a href="/spendrush">SpendRush</a></li>
                   <li>Flash Sales</li>
                   <li>Member-Only Offers</li>
                   <li>Bundle Deals</li>
@@ -59,3 +59,4 @@ export const Stylequest = () => {
       </div>
    );
 };
+
